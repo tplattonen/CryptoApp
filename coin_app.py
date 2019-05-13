@@ -1,14 +1,14 @@
 from flask import Flask, render_template, url_for
-import api_call
+from api_call import coin_json
 app = Flask(__name__)
 
-coins = api_call
+coins = coin_json
 print(coins)
 
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("home.html", coins=coins)
+    return render_template("home.html", coins=coin_json)
 
 @app.route("/about")
 def about():

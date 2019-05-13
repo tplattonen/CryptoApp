@@ -8,16 +8,32 @@
               <a class="mr-2" href="#">{{ coin.name }}</a>
               <small class="text-muted">{{ coin.symbol }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ coin.price_usd }}</a></h2>
-            <p class="article-content">{{ coin.rank }}</p>
+            <h2><a class="article-title" href="#">Price ($): {{ coin.price_usd }}</a></h2>
+            <p class="article-content">Rank: {{ coin.rank }}</p>
               <p class="article-content">{{ coin.h_volume_usd }}</p>
-              <p class="article-content">{{ coin.market_cap_usd }}</p>
-              <p class="article-content">{{ coin.available_supply }}</p>
-              <p class="article-content">{{ coin.total_supply }}</p>
-              <p class="article-content">{{ coin.max_supply }}</p>
-              <p class="article-content">{{ coin.percent_change_1h }}</p>
-              <p class="article-content">{{ coin.percent_change_24h }}</p>
-              <p class="article-content">{{ coin.percent_change_7d }}</p>
+              <p class="article-content">Market cap: {{ coin.market_cap_usd }}</p>
+              <p class="article-content">Available supply: {{ coin.available_supply }}</p>
+              <p class="article-content">Total supply: {{ coin.total_supply }}</p>
+              <p class="article-content">Max supply: {{ coin.max_supply }}</p>
+
+              {% if coin.percent_change_1h.startswith('-') %}
+                <p class="article-content" style="color: red">% Change 1h: {{ coin.percent_change_1h }}</p>
+              {% else %}
+                <p class="article-content" style="color: #42f448">% Change 1h: {{ coin.percent_change_1h }}</p>
+              {% endif %}
+
+              {% if coin.percent_change_24h.startswith('-') %}
+                <p class="article-content" style="color: red">% Change 24h: {{ coin.percent_change_24h }}</p>
+              {% else %}
+                <p class="article-content" style="color: #42f448">% Change 24h: {{ coin.percent_change_24h }}</p>
+              {% endif %}
+
+
+              {% if coin.percent_change_7d.startswith('-') %}
+                <p class="article-content" style="color: red">% Change 7d: {{ coin.percent_change_7d }}</p>
+              {% else %}
+                <p class="article-content" style="color: #42f448">% Change 7d: {{ coin.percent_change_7d }}</p>
+              {% endif %}
           </div>
         </article>
     {% endfor %}
