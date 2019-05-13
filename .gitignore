@@ -84,4 +84,7 @@ fabric.properties
 .idea/sonarlint
 
 __pycache__
+
+.idea/*
+.idea/
 # End of https://www.gitignore.io/api/pycharm
