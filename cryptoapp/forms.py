@@ -39,7 +39,7 @@ class update_account_form(FlaskForm):
     picture = FileField('Update Your Profile Picture', validators=[FileRequired(), FileAllowed(['jpg', 'jpeg', 'png', 'gif'])])
     submit = SubmitField('Update Account Information')
 
-    # Validators on registration so no errors will occur when trying to register dublicate data.
+    # Validators on update so no errors will occur when trying to register dublicate data.
     def validate_username(self, username):
         if username.data != current_user.username:
             user = User.query.filter_by(username=username.data).first()

@@ -14,13 +14,14 @@ coins = coin_json
 
 
 #Route for home page
-@app.route("/")
 @app.route("/home")
+@login_required
 def home():
     return render_template("home.html", coins=coin_json)
 
 # Route for about page
 @app.route("/about")
+@login_required
 def about():
     return render_template("about.html", title='About')
 
@@ -41,6 +42,7 @@ def register():
 
 
 # Route for login page
+@app.route("/")
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
