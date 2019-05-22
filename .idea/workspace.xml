@@ -45,16 +45,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-39" />
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cryptoapp/templates/register.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -169,10 +171,11 @@
         <option value="$PROJECT_DIR$/cryptoapp/templates/home.html" />
         <option value="$PROJECT_DIR$/cryptoapp/forms.py" />
         <option value="$PROJECT_DIR$/cryptoapp/routes.py" />
+        <option value="$PROJECT_DIR$/Procfile.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="width" value="1304" />
     <option name="height" value="1039" />
@@ -192,11 +195,6 @@
             <path>
               <item name="coinapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="coinapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coinapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coinapp" type="462c0819:PsiDirectoryNode" />
-              <item name="cryptoapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,15 +284,15 @@
       <updated>1557674470919</updated>
       <workItem from="1557674472086" duration="10147000" />
       <workItem from="1557740626992" duration="53836000" />
-      <workItem from="1558523071026" duration="514000" />
+      <workItem from="1558523071026" duration="1407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64497000" />
+    <option name="totallyTimeSpent" value="65390000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20402685" />
@@ -464,7 +462,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
