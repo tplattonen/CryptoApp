@@ -1,1 +1,0 @@
-web: gunicorn crypto:app --log-file=-
